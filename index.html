@@ -43,6 +43,72 @@
         .subscribe-btn:hover {
             background: #218838;
         }
+        .social-login {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .social-login h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .social-btn.vk {
+            background: #4c75a3;
+        }
+        .social-btn.vk:hover {
+            background: #3d5f80;
+        }
+        .social-btn.google {
+            background: #db4437;
+        }
+        .social-btn.google:hover {
+            background: #c23321;
+        }
+        .social-btn.github {
+            background: #333;
+        }
+        .social-btn.github:hover {
+            background: #222;
+        }
+        .social-btn.telegram {
+            background: #0088cc;
+        }
+        .social-btn.telegram:hover {
+            background: #0077b3;
+        }
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -54,9 +120,32 @@
         
         <h2>Навыки</h2>
         <p>Владею основами HTML, CSS, JavaScript. Изучаю Git и системы контроля версий. Имею опыт работы с различными инструментами разработки и стремлюсь к постоянному профессиональному росту.</p>
-        
-     
-    <!-- Новая кнопка подписки -->
+    </div>
+
+    <!-- Форма входа через социальные сети -->
+    <div class="social-login">
+        <h2>Войти через социальные сети</h2>
+        <div class="social-buttons">
+            <button class="social-btn vk">
+                <span class="social-icon">VK</span>
+                ВКонтакте
+            </button>
+            <button class="social-btn google">
+                <span class="social-icon">G</span>
+                Google
+            </button>
+            <button class="social-btn github">
+                <span class="social-icon">Git</span>
+                GitHub
+            </button>
+            <button class="social-btn telegram">
+                <span class="social-icon">T</span>
+                Telegram
+            </button>
+        </div>
+    </div>
+    
+    <!-- Кнопка подписки -->
     <div class="subscription">
         <h2>Будьте в курсе новостей</h2>
         <button class="subscribe-btn">Подписаться на новости</button>
